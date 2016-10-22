@@ -89,8 +89,6 @@ public class Variables {
 		//On peut déclarer des expressions en binaire avec le préfixe 0b
 		i8 = 0b1111_1111;							// Vaut 255
 		i8 = 0b1000_0000_0000;						// Vaut 2048
-		
-		
+			
 	}
-
 }
