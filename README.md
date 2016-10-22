@@ -1,1 +1,1 @@
-Un repertoir pour les cours d'open classroom
+Un répertoire pour les cours d'Open Classroom
