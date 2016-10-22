@@ -49,6 +49,8 @@ public class Entrees_Clavier {
 		str = sc.nextLine();      
 		System.out.println("FIN ! ");
 		
+		//test
+		
 	}
 
 }
