@@ -24,30 +24,30 @@ public class I_Variables {
 		//Opérateurs arithmétiques
 		int nb1, nb2, nb3, nb4;
 		
-		nb1 = 1 + 3;								//Addition 			4
-		nb2 = 2 * 6;								//Multiplication	12
-		nb3 = nb2 / nb1;							//Division			3	
-		nb1 = 5 % 2;								//Modulo			1
-		nb2 = 99 % 8;								//					3
-		nb3 = 6 % 3;								//					0
+		nb1 = 1 + 3;								//Addition 				4
+		nb2 = 2 * 6;								//Multiplication		12
+		nb3 = nb2 / nb1;							//Division				3	
+		nb1 = 5 % 2;								//Modulo				1
+		nb2 = 99 % 8;								//						3
+		nb3 = 6 % 3;								//						0
 		
 		nb1 = nb2 = nb3 = nb4 = 2;
 		
-		nb1 = nb1 + 1;								//Incrémentation    3
-		nb1 += 1;									//					4
-		nb1++;										//					5
-		++nb1;										//					6
+		nb1 = nb1 + 1;								//Incrémentation   	 	3
+		nb1 += 1;									//						4
+		nb1++;										//N'a pas la priorité	5
+		++nb1;										//A la priorité			6
 			
-		nb2 = nb2 - 1;								//Décrémentation   	1
-		nb2 -= 1;									//					0
-		nb2--;										//					-1
-		--nb2;										//					-2
+		nb2 = nb2 - 1;								//Décrémentation  	 	1
+		nb2 -= 1;									//						0
+		nb2--;										//						-1
+		--nb2;										//						-2
 		
-		nb3 = nb3 * 2;								//Multiplication   	4
-		nb3 *= 2;									//					8
+		nb3 = nb3 * 2;								//Multiplication   		4
+		nb3 *= 2;									//						8
 			
-		nb4 = nb4 / 2;								//Division			1
-		nb4 /= 2;									//					0.5
+		nb4 = nb4 / 2;								//Division				1
+		nb4 /= 2;									//						0.5
 		
 		//Conversions ou "Cast"
 		int i2 = 123;

@@ -1,0 +1,80 @@
+package chapitre_1;
+
+import java.util.Scanner;
+
+public class IV_Boucles {
+
+	public static void main(String[] args) {
+		
+		/* La boucle while
+		 * 
+		 * while (Condition)				Les accolades sont facultatives lorsque 
+		 * { 							    les instructions ne font qu'une ligne.
+		 * 		Instructions à répéter
+		 * }
+		 * 
+		 * On peut intégrer une boucle dans une autre boucle
+		 */
+
+		//Une variable vide
+		String prenom;
+		//On initialise celle-ci à O pour oui
+		char reponse = 'O';
+		//Notre objet Scanner
+		Scanner sc = new Scanner(System.in);
+		//Tant que la reponse ees oui
+		while (reponse == 'O')
+		{
+			//On affiche une instruction
+			System.out.println("Donnez un prénom : ");
+			//On récupere le prenom saisi
+			prenom = sc.nextLine();
+			//On affiche la phrase avec le prénom
+			System.out.println("Bonjour " +prenom+ ", comment vas-tu ?");
+			//Cela nous permet d'entrer dans la deuxieme boucle
+			reponse = ' ';
+			while(reponse != 'O' && reponse != 'N'){
+				//On demande si la personne veut réessayer
+				System.out.println("Voulez-vous réessayer . (O/N)");
+				//On récupère la réponse de l'utilisateur
+				//Le premier caractère de la chaine de la chaine
+				reponse = sc.nextLine().charAt(0); 
+			}
+		}
+		//Fin de la boucle
+		System.out.println("Au revoir...");
+		
+		
+		/* Atention à ne pas faire de boucles infinies
+		 * int a = 1, b = 15;
+		 * while(a < b)
+		 * 		System.out.println("coucou " +a+ " fois !!")
+		 *
+		 * Il aurait fallu ajouter une incrémentation de a
+		 */
+		
+		System.out.println("\nVersion non compacte");
+		int a = 1, b = 15;
+		while(a < b)
+		{
+			System.out.println("coucou " +a+ " fois !!");
+			a++;
+		}
+		
+		System.out.println("\nVersion compacte a++");
+		a = 1;
+		while(a++ < b)
+			System.out.println("coucou " +a+ " fois !!");
+		
+		System.out.println("\nVersion compacte ++a");
+		a = 1;
+		while(++a < b)
+			System.out.println("coucou " +a+ " fois !!");
+		
+		//L'incrémentation ++var est prioritaire sur la condition mais pas var++
+		
+		
+		
+		sc.close();
+	}
+}

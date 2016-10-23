@@ -64,7 +64,7 @@ public class III_Conditions {
 		 */
 		
 		//Switch sans break;
-		System.out.println("\n\nTest sans \"break;\"\n");
+		System.out.println("\nTest sans \"break;\"");
 		int note = 10;
 		
 		switch(note)
@@ -81,7 +81,7 @@ public class III_Conditions {
 		
 		//Switch sans break;
 				
-		System.out.println("\n\nTest avec \"break;\"\n");	
+		System.out.println("\nTest avec \"break;\"");	
 					
 		switch(note)
 		{
