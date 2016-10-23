@@ -6,6 +6,7 @@ import java.util.Scanner;
 //Importe toutes les classes du package java.util
 import java.util.*;
 
+@SuppressWarnings("unused")
 public class Entrees_Clavier {
 
 	public static void main(String[] args) {
@@ -48,6 +49,8 @@ public class Entrees_Clavier {
 		System.out.println("Saisissez une chaîne : ");
 		str = sc.nextLine();      
 		System.out.println("FIN ! ");
+		
+		sc.close();
 		
 	}
 }
