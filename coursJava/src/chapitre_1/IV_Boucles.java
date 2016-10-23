@@ -16,6 +16,7 @@ public class IV_Boucles {
 		 * On peut intégrer une boucle dans une autre boucle
 		 */
 
+		System.out.println("Boucle while");
 		//Une variable vide
 		String prenom;
 		//On initialise celle-ci à O pour oui
@@ -72,6 +73,59 @@ public class IV_Boucles {
 			System.out.println("coucou " +a+ " fois !!");
 		
 		//L'incrémentation ++var est prioritaire sur la condition mais pas var++
+		
+		/* La boucle do... while
+		 * 
+		 * do{    				Les accolades son facultatives pour une seule ligne d'instructions
+		 * instructions
+		 * }while(condition);
+		 * 
+		 * La même chose que la boucle while excepté qu'elle s'effectue toujours au moins une fois
+		 */
+		
+		System.out.println("\nBoucle do... while");
+		prenom = new String();
+		//Pas besion d'initialiser comme on entre toujours dans la boucle
+		reponse = ' ';
+		
+		do{
+			System.out.println("Donnez un prénom : ");
+			prenom = sc.nextLine();
+			System.out.println("Bonjour " +prenom+ ", comment vas-tu ?");
+			
+			do{
+				System.out.println("Voulez-vous réessayer ? (O/N)");
+				reponse = sc.nextLine().charAt(0);
+			}while (reponse != 'O' && reponse != 'N');
+		}while(reponse == 'O');
+		
+		System.out.println("Au revoir...");
+		
+		
+		/* La boucle for
+		 * 
+		 * for( var; condition; instruction: incrémentation ou décrementation le plus souvent)
+		 * {					Les accolades son facultatives pour une seule ligne d'instructions
+		 * 		instructions
+		 * }
+		 */
+		System.out.println("\nBoucle for ++");
+		
+		for (int i = 1; i <= 10; i++)
+			System.out.println("Voici la ligne " +i);
+		
+		//On peut aussi décrémenter
+		
+		System.out.println("\nBoucle for --");
+		
+		for(int i = 10; i >= 0; i--)
+			System.out.println("Il reste " +i+ " ligne(s) à écrire");
+		
+		//On peut aussi spécifier plusieurs variables et un groupement de conditions
+		System.out.println("\nBoucle for avec plusieurs variables");
+		
+		for(int i = 0, j = 2; (i < 10 && j < 6); i++, j+=2)
+			System.out.println("i = " +i+ ", j = " +j);
 		
 		
 		
