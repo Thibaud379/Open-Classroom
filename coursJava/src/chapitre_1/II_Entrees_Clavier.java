@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.*;
 
 @SuppressWarnings("unused")
-public class Entrees_Clavier {
+public class II_Entrees_Clavier {
 
 	public static void main(String[] args) {
 		

@@ -1,6 +1,6 @@
 package chapitre_1;
 
-public class Conditions {
+public class III_Conditions {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {

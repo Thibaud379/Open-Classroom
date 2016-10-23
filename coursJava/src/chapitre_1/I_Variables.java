@@ -1,6 +1,6 @@
 package chapitre_1;
 
-public class Variables {
+public class I_Variables {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
