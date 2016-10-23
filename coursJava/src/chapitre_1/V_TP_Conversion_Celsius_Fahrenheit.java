@@ -2,7 +2,7 @@ package chapitre_1;
 
 import java.util.Scanner;
 
-public class TP_Conversion_Celsius_Fahrenheit {
+public class V_TP_Conversion_Celsius_Fahrenheit {
 
 	public static void main(String[] args) {
 		
