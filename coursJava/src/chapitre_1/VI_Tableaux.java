@@ -68,9 +68,9 @@ public class VI_Tableaux {
 				System.out.println("Voulez-vous essayer à nouveau ? (O/N)");
 				reponse = sc.nextLine().charAt(0);
 			}while(reponse != 'O' && reponse != 'N');
-		}while(reponse == 'O');
+		 }while(reponse == 'O');
 		
-		System.out.println("Au revoir");
+		 System.out.println("Au revoir");
 		
 		/* Il est courant de rencontrer des erreurs en travaillant avec des tableaux:
 		 * 
@@ -81,6 +81,41 @@ public class VI_Tableaux {
 		 * java.lang.ArrayIndexOutOfBoundsException
 		 * car nous avons essayer d'écrire (ou de lire) dans une case qui n'est pas définie
 		 */
+		
+	    System.out.println("Affichage de toute les valeurs d'un tableau bidimensionnel (boucle while)");
+	    //Variables
+	    int j = 0;
+	    i = 0;
+	    //Boucle des lignes 
+	    while (i < 2){
+		  j = 0;
+		  //Boucle des colonnes
+		  while(j < 5){
+		    System.out.print(premiersNombres[i][j]);
+		    j++;
+		  }
+		  System.out.println("");
+		  i++;
+		}
+		
+		System.out.println("\nAffichage de toute les valeurs d'un tableau bidimensionnel (boucle for)");
+		for(int i1 = 0; i1 < 2; i1++){
+			for(int j1 = 0; j1 < 5; j1++)
+				System.out.print(premiersNombres[i1][j1]);
+			System.out.println("");
+		}
+		
+		System.out.println("\nAffichage de toute les valeurs d'un tableau bidimensionnel (boucle for syntaxe spéciale)");
+		int i3 = 0, j3 = 0;
+		for(int[] int1 : premiersNombres){
+			i3 = 0;
+			for(int int2 : int1){
+				System.out.println("La valeur de la nouvelle boucle est : " +int2);
+				System.out.println("La valeur du tableau à l'indice [" +j3+ "][" +i3+ "] est : " +premiersNombres[j3][i3]);
+				i3++;
+			}
+			j3++;
+		}	
 		
 		
 		sc.close();
