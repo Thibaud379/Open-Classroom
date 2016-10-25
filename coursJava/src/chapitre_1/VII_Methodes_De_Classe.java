@@ -72,10 +72,22 @@ public class VII_Methodes_De_Classe {
 		
 		
 		//Utilisation des méthodes crées
-		System.out.println("\nAffichage d'un tableau via une méthode");
+		System.out.println("\nAffichage d'un tableau de String via une méthode");
 		String[] tab = {"toto", "tata", "titi", "tete"};
 		afficherTableau(tab);
+		
 		System.out.println(toString(tab));
+		
+		int[] tabInt = {1, 2, 3, 4};
+		String[][] tabStr2 = {{"1", "2", "3", "4"}, {"toto", "titi", "tata"}};
+		
+		//La méthode avec un tableau d'int sera invoquée
+		System.out.println("\nAffichage d'un tableau d'int via une méthode");
+		afficherTableau(tabInt);
+		
+		//La méthode avec un tableau de String à deux dimensions sera invoquée
+		System.out.println("\nAffichage d'un tableau de String à deux dimensions via une méthode");
+		afficherTableau(tabStr2);
 	}
 	
 	/* Créer sa propre méthode
@@ -85,7 +97,7 @@ public class VII_Methodes_De_Classe {
 	 *   	-Apres on a static
 	 *		-Ensuite le type de retour de a méthode
 	 *		-Le nom de la méthode 
-	 * 		-Les arguments de la méthode
+	 * 		-Les paramètres de la méthode
 	 * 		-Une instruction return dans la méthode
 	 */
 	
@@ -114,7 +126,28 @@ public class VII_Methodes_De_Classe {
 		for(String str : tab)
 			retour += str +"\n";
 		
-		return retour;
+		return retour.substring(0, retour.length()-2);
 	}
 
+	/* La surcharge de méthode
+	 * 
+	 * On garde le meme nom pour une méthode
+	 * mais on change ses paramètres
+	 */
+	
+	//Affiche un tableau d'int
+	static void afficherTableau(int[] tab){
+		for(int str: tab)
+			System.out.println(str);
+	}
+	
+	//Affihe un tableau à deux dimensions de String
+	static void afficherTableau(String[][]tab){
+		for(String[] subTab: tab){
+			for(String str : subTab)
+				System.out.println(str);
+		}
+	}
+	
+	
 }
