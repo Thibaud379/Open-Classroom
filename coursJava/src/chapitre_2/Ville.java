@@ -1,4 +1,4 @@
-package chapitre_2.premiere_classe;
+package chapitre_2;
 
 
 public class Ville {
