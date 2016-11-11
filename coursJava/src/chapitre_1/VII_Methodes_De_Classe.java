@@ -94,6 +94,8 @@ public class VII_Methodes_De_Classe {
 	 *  
 	 *  	-Elle se situe dans la classe mais hors de tout autre méthode
 	 *   	-Le premier mot clé: il définit la portée de la méthode
+	 *   		-public: tout le monde peut y accéder
+	 *   		-private: on ne peut y accéder qu'a l'intérieur de la classe
 	 *   	-Apres on a static
 	 *		-Ensuite le type de retour de a méthode
 	 *		-Le nom de la méthode 
