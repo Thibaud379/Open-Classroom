@@ -5,14 +5,15 @@ public class Ville {
 	
 	//variables locales
 	public static int nbreInstances = 0;
-	private static int nbreInstancesBis = 0;  
+	protected static int nbreInstancesBis = 0;  
 	
 	//Variables d'instance: penser à les encapsuler:
 	//i.e. -> les rendre "private" afin d'empecher leur acces depuis l'extérieur de la classe
-	private String nom;					//Nom de la ville
-	private String pays;				//Pays de la ville
-	private int habitants;				//Nombre d'habitants dans la ville
-	private char categorie;				//Catégorie de la ville
+	//	   -> protected les rends aussi accessibles par les classes qui héritent
+	protected String nom;					//Nom de la ville
+	protected String pays;				//Pays de la ville
+	protected int habitants;				//Nombre d'habitants dans la ville
+	protected char categorie;				//Catégorie de la ville
 	
 	/*Constructeur par défaut
 	 *Il doit impérativement avoir le même nom que la classe
@@ -42,7 +43,7 @@ public class Ville {
 	//Retourne une description de la ville
 	public String desc(){
 		return "\t" +this.nom+ " est une ville de " +this.pays+ ", elle comporte: " 
-				+this.habitants+ "habitant(s) => elle est donc une ville de catégorie: " 
+				+this.habitants+ " habitant(s) => elle est donc une ville de catégorie: " 
 				+this.categorie; 
 	}
 	//Retourne un String ui compare les deux villes

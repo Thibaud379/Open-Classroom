@@ -96,6 +96,7 @@ public class VII_Methodes_De_Classe {
 	 *   	-Le premier mot clé: il définit la portée de la méthode
 	 *   		-public: tout le monde peut y accéder
 	 *   		-private: on ne peut y accéder qu'a l'intérieur de la classe
+	 *   		-protected: seul les classes qui héritent de la premiere on accès a ses méthodes prtotected
 	 *   	-Apres on a static
 	 *		-Ensuite le type de retour de a méthode
 	 *		-Le nom de la méthode 
