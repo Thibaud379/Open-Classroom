@@ -1,16 +1,16 @@
 package chapitre_2;
 
-public class II_Capitale extends I_Ville{
+public class Capitale extends Ville{
 
 	private String monument;
 	
 	
-	public II_Capitale(){
+	public Capitale(){
 		super();		//appelle le constructeur de la classe mère
 		monument = "aucun";
 	}
 	
-	public II_Capitale(String nom, String pays, int habitants, String monument){
+	public Capitale(String nom, String pays, int habitants, String monument){
 		super(nom, pays, habitants);
 		this.monument = monument;
 		System.out.println("*Création d'une capitale avec des paramètres*");
