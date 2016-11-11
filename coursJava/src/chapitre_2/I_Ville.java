@@ -1,7 +1,7 @@
 package chapitre_2;
 
 
-public class Ville {
+public class I_Ville {
 	
 	//variables locales
 	public static int nbreInstances = 0;
@@ -19,7 +19,7 @@ public class Ville {
 	 *Il doit impérativement avoir le même nom que la classe
 	 *Il n'a pas de type de retour
 	 */
-	public Ville(){
+	public I_Ville(){
 		System.out.println("*Création d'une ville*");
 		nom = "Inconnu";
 		pays = "Inconnu";
@@ -30,7 +30,7 @@ public class Ville {
 		nbreInstancesBis++;
 	}
 	//Constructeur avec paramètres
-	public Ville(String nom, String pays,int habitants) {
+	public I_Ville(String nom, String pays,int habitants) {
 		System.out.println("*Création d'une ville avec des paramètres*");
 		this.nom = nom;
 		this.pays = pays;
@@ -47,7 +47,7 @@ public class Ville {
 				+this.categorie; 
 	}
 	//Retourne un String ui compare les deux villes
-	public String comparer(Ville v){
+	public String comparer(I_Ville v){
 		String str = new String();
 		
 		if(v.getHabitants() > this.habitants)

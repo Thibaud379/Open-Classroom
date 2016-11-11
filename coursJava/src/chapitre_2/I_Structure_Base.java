@@ -1,6 +1,6 @@
 package chapitre_2;
 
-public class Structure_Base {
+public class I_Structure_Base {
 
 	/* Une classe est un modèle qui peut etre utilisée pour créer une
 	 * "instance" de cette classe
@@ -12,13 +12,13 @@ public class Structure_Base {
 	public static void main(String[] args){
 		//Données, variables, traitements...
 		//Utilisation des variables de classe
-		System.out.println("Le nombre d'instances de la classe ville est :"+Ville.nbreInstances+ "\n");
+		System.out.println("Le nombre d'instances de la classe ville est :"+I_Ville.nbreInstances+ "\n");
 		
-		Ville v = new Ville();									//Il faut bien penser à respecter l'ordre des paramètres
-		Ville v1 = new Ville("Marseille", "France", 123456); 	// Ville v3 = new Vile(1, "Poil", "France");
-		Ville v2 = new Ville("Rio", "Brésil", 321654);			//->Erreur de compilation
+		I_Ville v = new I_Ville();									//Il faut bien penser à respecter l'ordre des paramètres
+		I_Ville v1 = new I_Ville("Marseille", "France", 123456); 	// Ville v3 = new Vile(1, "Poil", "France");
+		I_Ville v2 = new I_Ville("Rio", "Brésil", 321654);			//->Erreur de compilation
 		
-		System.out.println("\nLe nombre d'instances de la classe ville est :"+Ville.nbreInstances);
+		System.out.println("\nLe nombre d'instances de la classe ville est :"+I_Ville.nbreInstances);
 		
 		System.out.println("\nUtilisation des Getters et Setters:");
 		System.out.println("v = "+v.getNom()+" ville de "+v.getHabitants()+ " habitants se situant en "+v.getPays());
