@@ -6,14 +6,18 @@ public class Capitale extends Ville{
 	
 	
 	public Capitale(){
-		super();		//appelle le constructeur de la classe mère
+		
+		super();	//appelle le constructeur de la classe mère
+		System.out.println("*Création d'une capitale vide*");
 		monument = "aucun";
+		
 	}
 	
 	public Capitale(String nom, String pays, int habitants, String monument){
+		
 		super(nom, pays, habitants);
-		this.monument = monument;
 		System.out.println("*Création d'une capitale avec des paramètres*");
+		this.monument = monument;
 	}
 	//Javadoc
 	/** 
@@ -21,11 +25,16 @@ public class Capitale extends Ville{
 	 * @return String retourne la description de l'objet
 	 */
 	public String desc(){
-		System.out.println("*Invocation de super.desc()*\n");
 		String str = super.desc()+ "\n \t ==>> " +this.monument+ " en est un monument";
 		return str;
 		
 	}
+	
+	public String toString(){
+		String str = super.toString()+ "\n \t ==>" +this.monument+ " en est un monument";
+		return str;
+	}
+	
 	/**
 	 * 
 	 * @return Le nom du monument

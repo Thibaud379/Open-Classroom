@@ -20,7 +20,7 @@ public class Ville {
 	 *Il n'a pas de type de retour
 	 */
 	public Ville(){
-		System.out.println("*Création d'une ville*");
+		System.out.println("*Création d'une ville vide*");
 		nom = "Inconnu";
 		pays = "Inconnu";
 		habitants = 0;
@@ -58,12 +58,55 @@ public class Ville {
 		return str;
 	}
 	
+	public String toString(){
+		return "\t" +this.nom+ " est une ville de " +this.pays+ ", elle comporte : "
+				+this.habitants+ " => elle est donc de catégorie : " +this.categorie;
+	}
+	//Retourne un code similaire si l'objet est equivalent
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + categorie;
+		result = prime * result + habitants;
+		result = prime * result + ((nom == null) ? 0 : nom.hashCode());
+		result = prime * result + ((pays == null) ? 0 : pays.hashCode());
+		return result;
+	}
+	//Teste l'égalité de deux objets
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Ville other = (Ville) obj;
+		if (categorie != other.categorie)
+			return false;
+		if (habitants != other.habitants)
+			return false;
+		if (nom == null) {
+			if (other.nom != null)
+				return false;
+		} else if (!nom.equals(other.nom))
+			return false;
+		if (pays == null) {
+			if (other.pays != null)
+				return false;
+		} else if (!pays.equals(other.pays))
+			return false;
+		return true;
+	}
+	
 	/*Les Getters et les Setters permettent d'accéder 
 	 *au variables d'instances d'un objet en limitant 
 	 *et surveillant les modifications qui y sont apportées.	 
 	 */
 	
 	//*************** ACCESEURS ***************
+	
 	
 	//retourne la catégorie de la ville
 	public char getCategorie() {
